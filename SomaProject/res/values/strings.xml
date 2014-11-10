@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SomaProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search_detail">SearchDetail</string>
+    <string name="title_activity_option_detail">OptionDetail</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search_item">SearchItem</string>
+
+</resources>
