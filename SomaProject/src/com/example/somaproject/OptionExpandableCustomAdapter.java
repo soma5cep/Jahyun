@@ -165,8 +165,14 @@ public class OptionExpandableCustomAdapter extends BaseExpandableListAdapter {
 						R.layout.expandablelistview_child2_child, null);
 				EditText txtParamName1 = (EditText) route.findViewById(R.id.txtParamName1);
 				EditText txtParamName2 = (EditText) route.findViewById(R.id.txtParamName2);
-				txtParamName1.setText("A");
-				txtParamName2.setText("B");
+				TextView txtParam1 = (TextView) route.findViewById(R.id.txtParam1);
+				TextView txtParam2 = (TextView) route.findViewById(R.id.txtParam2);
+				txtParam1.setText((char)('A'+2*i)+"");
+				txtParam2.setText((char)('A'+2*i+1)+"");
+				txtParamName1.setText("인자" + (char)('A'+2*i));
+				txtParamName2.setText("인자" + (char)('A'+2*i+1));
+				txtParamName1.setEnabled(true);
+				txtParamName2.setEnabled(true);
 				inLayout.addView(route);
 			}
 		}

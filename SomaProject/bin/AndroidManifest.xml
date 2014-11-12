@@ -24,15 +24,15 @@
         <activity
             android:name=".OptionDetail"
             android:label="@string/title_activity_option_detail" >
-        </activity>
-        <activity
-            android:name=".SearchItem"
-            android:label="@string/title_activity_search_item" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchItem"
+            android:label="@string/title_activity_search_item" >
         </activity>
     </application>
 
