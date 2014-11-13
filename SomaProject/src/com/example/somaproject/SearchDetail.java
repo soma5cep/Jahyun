@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -62,7 +63,9 @@ public class SearchDetail extends Activity {
 		btnAdd.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub		
+				Intent resultIntent = new Intent();
+				//startactivity
+				// TODO Auto-generated method stub
 			}
 		});
 		btnSubmit.setOnClickListener(new OnClickListener() {
@@ -73,6 +76,5 @@ public class SearchDetail extends Activity {
 		});
 		
 		//for(int i=0;i<optionCostum.getGroupCount();i++) lv.expandGroup(i);
-		
 	}
 }

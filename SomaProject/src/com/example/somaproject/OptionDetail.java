@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.R.integer;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -26,11 +27,14 @@ public class OptionDetail extends ActionBarActivity {
 	View informView;
 	Button btnSubmit;
 	ListView lvParam;
-	int type = 1;
+	int type = 0;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Intent intent = getIntent();
+		String optionName = intent.getStringExtra("name");
+		type = type+0;
 		if (type == 0) {
 			setContentView(R.layout.activity_option_detail);
 			txtOptionDetail = (TextView) findViewById(R.id.txtDetail);
